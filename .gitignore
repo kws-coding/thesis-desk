@@ -1,0 +1,68 @@
+# Secrets (never commit)
+.env
+.env.*
+!.env.example
+application-local.yml
+application-local.properties
+application-secrets.*
+*.pem
+*.key
+secrets/
+
+# Java / build
+target/
+build/
+out/
+bin/
+*.class
+*.jar
+*.war
+!gradle/wrapper/gradle-wrapper.jar
+!.mvn/wrapper/maven-wrapper.jar
+.gradle/
+hs_err_pid*
+replay_pid*
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.project
+.classpath
+.settings/
+.factorypath
+.apt_generated/
+.springBeans
+.sts4-cache/
+nbproject/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs and temp
+*.log
+logs/
+tmp/
+temp/
+*.swp
+*~
+
+# Local data and caches (MongoDB volumes, raw API caches, exports)
+data/
+mongo-data/
+db-data/
+.cache/
+cache/
+exports/
+
+# Test output
+coverage/
+*.lcov
+junit-reports/
+
+# Claude Code local settings (shared project files stay tracked)
+.claude/settings.local.json
